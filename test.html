@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image with Text on Top</title>
+  <style>
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="img/img 1 gp 1.avif" alt="Image description">
+    <div class="overlay-text">Your Text Here</div>
+  </div>
+
+</body>
+</html>

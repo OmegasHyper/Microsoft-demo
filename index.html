@@ -5,105 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img\Microsoft-Favicon.png">
+    <link rel="stylesheet" href="styles.css">
     <title>Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps</title>
  </head>
  <body>
     <header>
-        <nav>
+        <nav id="top-left-nav">
             <a href="index.html">
-                <img src="img\RE1Mu3b.png" alt="Microsoft logo" height="25">
+                <img src="img\RE1Mu3b.png" alt="Microsoft logo" height="23">
             </a>
             <ul>
-                <li><a href="#">Microsoft 365</a></li>
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Copilot</a></li>
-                <li><a href="#">Windows</a></li>
-                <li><a href="#">Support</a></li>
+                <li class="list-item"><a href="#">Microsoft 365</a></li>
+                <li class="list-item"><a href="#">Office</a></li>
+                <li class="list-item"><a href="#">Copilot</a></li>
+                <li class="list-item"><a href="#">Windows</a></li>
+                <li class="list-item"><a href="#">Support</a></li>
             </ul>
         </nav>
-        <nav>
-            <li><a href="#">All Microsoft</a></li>
-            <li><a href="#"><img src="img\search.png" alt="Search Microsoft.com" height="30"></a></li>
-            <li><a href="#"><img src="img\login.png" alt="Sign in to your account" height="30"></a></li>
+        <nav id="top-right-nav">
+            <ul>
+                <li class="list-item">
+                    <a href="#">All Microsoft <i class="down-arrow"></i></a>
+                </li>
+                <li class="list-item"><a href="#"><img src="img\search.png" alt="Search Microsoft.com" height="20"></a></li>
+                <li class="list-item"><a href="#"><img src="img\login.png" alt="Sign in to your account" height="30"></a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <div id="slider">
-            <section>
-                <img src="img\slide 1.avif" alt="slide 1">
-                <h2>Achieve the extraordinary</h2>
-                <p>Microsoft 365 delivers cloud storage, security and Microsoft Copilot in your favourite apps – all in one plan.</p>
-                <a href="#">Shop Microsoft 365</a>
+            <section id="slide1">
+                <div class="image-container"><img src="img\slide 1.avif" alt="slide 1"></div>
+                <div class="overlay-text">
+                    <h2>Achieve the extraordinary</h2>
+                    <p>Microsoft 365 delivers cloud storage, security and <br>Microsoft Copilot in your favourite apps – all in one plan.</p>
+                    <div class="overlay-button"><a href="#">Shop Microsoft 365</a></div>
+                </div>
             </section>
             <!-- 
-            <section>
-                <img src="img\slide 2.avif" alt="slide 1">
-                <h2>Copilot is your AI companion</h2>
-                <p>Always by your side, ready to support you whenever and wherever you need it.</p>
-                <a href="#">Download the copilot app</a>
+            <section id="slide2">
+                <div class="image-container"><img src="img\slide 2.avif" alt="slide 1"></div>
+                <div class="overlay-text">
+                    <h2>Copilot is your AI companion</h2>
+                    <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+                    <a href="#">Download the copilot app</a>
+                </div>
             </section>
              -->
         </div>
-        <div id="Products">
-            <section>
+        <div id="products">
+            <section class="feature-box">
                 <img src="img\img 1 gp 1.avif" alt="Product 1">
-                <h2>Designed for life today—and tomorrow</h2>
-                <p>The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
-                <a href="#">See if your PC is ready</a>
+                <h2>Designed for life <br> today—and <br>tomorrow</h2>
+                <p>The next-generation of games. <br>Your goals. Friends and family. <br>Windows 11 was made to bring <br>you closer to everything you love.</p>
+                <span><a href="#">See if your PC is ready</a></span>
             </section>
-            <section>
+            <section class="feature-box">
                 <img src="img\img 2 gp 1.webp" alt="Product 2">
                 <h2>Microsoft Edge</h2>
-                <p>World-class performance with more privacy, more productivity, and more value while you browse.</p>
-                <a href="#">Download now</a>
+                <p>World-class performance with <br>more privacy, more productivity, <br>and more value while you <br>browse.</p>
+                <span><a href="#">Download now</a></span>
             </section>
-            <section>
+            <section class="feature-box">
                 <img src="img\img 3 gp 1.avif" alt="Product 3">
                 <h2>Microsoft OneDrive</h2>
-                <p>Save your files and photos to OneDrive and access them from any device, anywhere.</p>
-                <a href="#">Learn more</a>
+                <p>Save your files and photos to <br>OneDrive and access them from <br>any device, anywhere.</p>
+                <span><a href="#">Learn more</a></span>
             </section>
-            <section>
+            <section class="feature-box">
                 <img src="img\img 4 gp 1.avif" alt="Product 4">
-                <h2>Outlook for iOS and Android</h2>
-                <p>Connect. Organize. Get things done.</p>
-                <a href="#">Download now</a>
+                <h2>Outlook for iOS and <br>Android</h2>
+                <p>Connect. Organize. Get things <br>done.</p>
+                <span><a href="#">Download now</a></span>
             </section>
         </div>
 
-        <div id="OneNote">
+        <div id="onenote">
             <img src="img\Highlight-PC-SMB-OneNote_VP4-1260x600.avif" alt="OneNote">
-            <h2>Organize your life</h2>
-            <p>Keep your ideas and notes organized with OneNote.</p>
-            <a href="#">Learn more</a>
+            <div class="overlay-text-2nd">
+                <h2>Organize your life</h2>
+                <p>Keep your ideas and notes organized with OneNote.</p>
+                <span class="overlay-button-2nd"><a href="#">Learn more</a></span>
+            </div>
         </div>
         <div id="services">
             <h2>For business</h2>
             <div id="service-boxes">
-                <section>
+                <section class="feature-box">
                     <img src="img/img 1 gp 2.avif" alt="service 1">
                     <h2>Microsoft 365 Copilot</h2>
-                    <p>Save time and focus on the things that matter most with AI in Microsoft 365 for business.</p>
-                    <a href="#">Learn more</a>
+                    <p>Save time and focus on the <br>things that matter most with AI in <br>Microsoft 365 for business.</p>
+                    <span><a href="#">Learn more</a></span>
                 </section>
-                <section>
+                <section class="feature-box">
                     <img src="img\img 2 gp 2.avif" alt="service 2">
                     <h2>20% off Windows 365</h2>
-                    <p>Experience seamless productivity with Windows 365 Cloud PC – delivering the full Windows experience on any device.</p>
-                    <a href="#">Learn more</a>
+                    <p>Experience seamless productivity <br>with Windows 365 Cloud PC – <br>delivering the full Windows <br>experience on any device.</p>
+                    <span><a href="#">Learn more</a></span>
                 </section>
-                <section>
+                <section class="feature-box">
                     <img src="img\img 3 gp 2.webp" alt="service 3">
                     <h2>Visual Studio 2022</h2>
-                    <p>Get the most comprehensive IDE for .NET and C++ developers on Windows for building web, cloud, desktop, mobile apps, services, and games.</p>
-                    <a href="#">Download Visual Studio 2022</a>
+                    <p>Get the most comprehensive IDE <br>for .NET and C++ developers on <br>Windows for building web, cloud, <br>desktop, mobile apps, services, <br>and games.</p>
+                    <span><a href="#">Download Visual Studio <br>2022</a></span>
                 </section>
-                <section>
+                <section class="feature-box">
                     <img src="img\img 4 gp 2.webp" alt="service 4">
-                    <h2>Empower people and teams with Microsoft Viva</h2>
-                    <p>Bring together connection, purpose, insight, and growth with the first employee experience platform built for the hybrid era.</p>
-                    <a href="#">Learn more about Microsoft Viva</a>
+                    <h2>Empower people and <br>teams with Microsoft <br>Viva</h2>
+                    <p>Bring together connection, <br>purpose, insight, and growth with <br>the first employee experience <br>platform built for the hybrid era.</p>
+                    <span><a href="#">Learn more about Microsoft <br>Viva</a></span>
                 </section>
             </div>
         </div>

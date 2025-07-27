@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Image with Text on Top</title>
-  <style>
-    .image-container {
-      position: relative;
-      width: 100%;
-      max-width: 600px;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
 
-    .image-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+.bottom-left {
+  position: absolute;
+  /* bottom: 8px; */
+  /* left: 16px; */
+}
 
-    .overlay-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-    }
-  </style>
+.top-left {
+  position: absolute;
+  /* top: 8px; */
+  /* left: 16px; */
+}
+
+.top-right {
+  position: absolute;
+  /* top: 8px;
+  right: 16px; */
+}
+
+.bottom-right {
+  position: absolute;
+  /* bottom: 8px;
+  right: 16px; */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
 </head>
 <body>
 
-  <div class="image-container">
-    <img src="img/img 1 gp 1.avif" alt="Image description">
-    <div class="overlay-text">Your Text Here</div>
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
+<div class="container">
+  <img src="img\slide 1.avif" alt="Snow" style="width:100%;">
+  <div class="centered">
+    <h2>Achieve the extraordinary</h2>
+    <p>Microsoft 365 delivers cloud storage, security and <br>Microsoft Copilot in your favourite apps – all in one plan.</p>
+    <a href="#">Shop Microsoft 365</a>
   </div>
+</div>
 
 </body>
-</html>
+</html> 

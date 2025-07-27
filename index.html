@@ -5,44 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img\Microsoft-Favicon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps</title>
  </head>
  <body>
     <header>
-        <nav id="top-left-nav">
+        <div>
             <a href="index.html">
                 <img src="img\RE1Mu3b.png" alt="Microsoft logo" height="23">
             </a>
-            <ul>
-                <li class="list-item"><a href="#">Microsoft 365</a></li>
-                <li class="list-item"><a href="#">Office</a></li>
-                <li class="list-item"><a href="#">Copilot</a></li>
-                <li class="list-item"><a href="#">Windows</a></li>
-                <li class="list-item"><a href="#">Support</a></li>
-            </ul>
-        </nav>
-        <nav id="top-right-nav">
-            <ul>
-                <li class="list-item">
-                    <a href="#">All Microsoft <i class="down-arrow"></i></a>
-                </li>
-                <li class="list-item"><a href="#"><img src="img\search.png" alt="Search Microsoft.com" height="20"></a></li>
-                <li class="list-item"><a href="#"><img src="img\login.png" alt="Sign in to your account" height="30"></a></li>
-            </ul>
-        </nav>
+            <nav id="top-left-nav">
+                <ul>
+                    <li class="list-item"><a href="#" class="uh">Microsoft 365</a></li>
+                    <li class="list-item"><a href="#" class="uh">Office</a></li>
+                    <li class="list-item"><a href="#" class="uh">Copilot</a></li>
+                    <li class="list-item"><a href="#" class="uh">Windows</a></li>
+                    <li class="list-item"><a href="#" class="uh">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div>
+            <nav id="top-right-nav">
+                <ul>
+                    <li class="list-item">
+                        <a href="#"><span class="uh">All Microsoft</span><i class="down-arrow"></i></a>
+                    </li>
+                    <li class="list-item"><a href="#"><img src="img\search.png" alt="Search Microsoft.com" height="20"></a></li>
+                    <li class="list-item"><a href="#"><img src="img\login.png" alt="Sign in to your account" height="25"></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <div id="slider">
-            <section id="slide1">
-                <div class="image-container"><img src="img\slide 1.avif" alt="slide 1"></div>
+            <div id="slide1-container">
+                <picture>
+                    <source media="(max-width: 1400px)" srcset="img/slide-1-scaled.avif">
+                    <source media="(max-width: 2560px)" srcset="img/slide 1.avif">
+                    <img src="img/slide 1.avif" alt="slide 1">
+                </picture>
                 <div class="overlay-text">
-                    <h2>Achieve the extraordinary</h2>
-                    <p>Microsoft 365 delivers cloud storage, security and <br>Microsoft Copilot in your favourite apps – all in one plan.</p>
-                    <div class="overlay-button"><a href="#">Shop Microsoft 365</a></div>
+                  <h2>Achieve the extraordinary</h2>
+                  <p>Microsoft 365 delivers cloud storage, security and <br>Microsoft Copilot in your favourite apps – all in one plan.</p>
+                  <br>
+                  <a href="#">Shop Microsoft 365</a>
                 </div>
-            </section>
+            </div>
             <!-- 
             <section id="slide2">
                 <div class="image-container"><img src="img\slide 2.avif" alt="slide 1"></div>
@@ -55,70 +65,72 @@
              -->
         </div>
         <div id="products">
-            <section class="feature-box">
+            <div class="feature-box">
                 <img src="img\img 1 gp 1.avif" alt="Product 1">
                 <h2>Designed for life <br> today—and <br>tomorrow</h2>
-                <p>The next-generation of games. <br>Your goals. Friends and family. <br>Windows 11 was made to bring <br>you closer to everything you love.</p>
-                <span><a href="#">See if your PC is ready</a></span>
-            </section>
-            <section class="feature-box">
+                <p>The next-generation of games. <br>Your goals. Friends and family. <br>Windows 11 was made to bring <br>you closer to everything you <br>love.</p>
+                <a href="#">See if your PC is ready</a> 
+            </div>
+            <div class="feature-box">
                 <img src="img\img 2 gp 1.webp" alt="Product 2">
                 <h2>Microsoft Edge</h2>
                 <p>World-class performance with <br>more privacy, more productivity, <br>and more value while you <br>browse.</p>
-                <span><a href="#">Download now</a></span>
-            </section>
-            <section class="feature-box">
+                <a href="#">Download now</a>    
+            </div>
+            
+            <div class="feature-box">
                 <img src="img\img 3 gp 1.avif" alt="Product 3">
                 <h2>Microsoft OneDrive</h2>
                 <p>Save your files and photos to <br>OneDrive and access them from <br>any device, anywhere.</p>
-                <span><a href="#">Learn more</a></span>
-            </section>
-            <section class="feature-box">
+                <a href="#">Learn more</a>  
+            </div>
+            <div class="feature-box">
                 <img src="img\img 4 gp 1.avif" alt="Product 4">
                 <h2>Outlook for iOS and <br>Android</h2>
                 <p>Connect. Organize. Get things <br>done.</p>
-                <span><a href="#">Download now</a></span>
-            </section>
+                <a href="#">Download now</a>    
+            </div>
         </div>
 
         <div id="onenote">
             <img src="img\Highlight-PC-SMB-OneNote_VP4-1260x600.avif" alt="OneNote">
             <div class="overlay-text-2nd">
                 <h2>Organize your life</h2>
-                <p>Keep your ideas and notes organized with OneNote.</p>
+                <p>Keep your ideas and notes organized with <br>OneNote.</p>
                 <span class="overlay-button-2nd"><a href="#">Learn more</a></span>
             </div>
         </div>
         <div id="services">
             <h2>For business</h2>
             <div id="service-boxes">
-                <section class="feature-box">
+                <div class="feature-box">
                     <img src="img/img 1 gp 2.avif" alt="service 1">
                     <h2>Microsoft 365 Copilot</h2>
                     <p>Save time and focus on the <br>things that matter most with AI in <br>Microsoft 365 for business.</p>
-                    <span><a href="#">Learn more</a></span>
-                </section>
-                <section class="feature-box">
+                    <a href="#">Learn more</a>  
+                </div>
+                <div class="feature-box">
                     <img src="img\img 2 gp 2.avif" alt="service 2">
                     <h2>20% off Windows 365</h2>
                     <p>Experience seamless productivity <br>with Windows 365 Cloud PC – <br>delivering the full Windows <br>experience on any device.</p>
-                    <span><a href="#">Learn more</a></span>
-                </section>
-                <section class="feature-box">
+                    <a href="#">Learn more</a>  
+                </div>
+                <div class="feature-box">
                     <img src="img\img 3 gp 2.webp" alt="service 3">
                     <h2>Visual Studio 2022</h2>
                     <p>Get the most comprehensive IDE <br>for .NET and C++ developers on <br>Windows for building web, cloud, <br>desktop, mobile apps, services, <br>and games.</p>
-                    <span><a href="#">Download Visual Studio <br>2022</a></span>
-                </section>
-                <section class="feature-box">
+                    <a href="#">Download Visual Studio <br>2022</a> 
+                </div>
+                <div class="feature-box">
                     <img src="img\img 4 gp 2.webp" alt="service 4">
                     <h2>Empower people and <br>teams with Microsoft <br>Viva</h2>
                     <p>Bring together connection, <br>purpose, insight, and growth with <br>the first employee experience <br>platform built for the hybrid era.</p>
-                    <span><a href="#">Learn more about Microsoft <br>Viva</a></span>
-                </section>
+                    <a href="#">Learn more about Microsoft <br>Viva</a> 
+                </div>
             </div>
         </div>
-        <div id="Follow-us">
+        
+        <div id="follow-us">
             <h2>Follow Microsoft</h2>
             <ul>
                 <li><a href="https://www.facebook.com/Microsoft"><img src="img/facebook-app-symbol.png" alt="Our Facebook page" height="20"></a></li>
@@ -129,62 +141,62 @@
     </main>
     <footer>
         <div id="menus-container">
-            <div id="column-1">
-                <h4>Microsoft Store</h4>
+            <div id="column-1" class="column-menu">                
                 <ul>
-                    <li><a href="#">Account profile</a></li>
-                    <li><a href="#">Download Centre</a></li>
-                    <li><a href="#">Order tracking</a></li>
+                    <li><h4>Microsoft Store</h4></li>
+                    <li class="uh2"><a href="#" >Account profile</a></li>
+                    <li class="uh2"><a href="#" >Download Centre</a></li>
+                    <li class="uh2"><a href="#" >Order tracking</a></li>
                 </ul>
             </div>
-            <div id="column-2">
-                <h4>Education</h4>
+            <div id="column-2" class="column-menu">                
                 <ul>
-                    <li><a href="#">Microsoft in education</a></li>
-                    <li><a href="#">Devices for education</a></li>
-                    <li><a href="#">Microsoft Teams for Education</a></li>
-                    <li><a href="#">Microsoft 365 Education</a></li>
-                    <li><a href="#">Office Education</a></li>
-                    <li><a href="#">Educator training and development</a></li>
-                    <li><a href="#">Deals for students and parents</a></li>
-                    <li><a href="#">Azure for students</a></li>
+                    <li><h4>Education</h4></li>
+                    <li class="uh2"><a href="#" >Microsoft in education</a></li>
+                    <li class="uh2"><a href="#" >Devices for education</a></li>
+                    <li class="uh2"><a href="#" >Microsoft Teams for Education</a></li>
+                    <li class="uh2"><a href="#" >Microsoft 365 Education</a></li>
+                    <li class="uh2"><a href="#" >Office Education</a></li>
+                    <li class="uh2"><a href="#" >Educator training and development</a></li>
+                    <li class="uh2"><a href="#" >Deals for students and parents</a></li>
+                    <li class="uh2"><a href="#" >Azure for students</a></li>
                 </ul>
             </div>
-            <div id="column-3">
-                <h4>Business</h4>
+            <div id="column-3" class="column-menu"> 
                 <ul>
-                    <li><a href="#">Microsoft Cloud</a></li>
-                    <li><a href="#">Microsoft Security</a></li>
-                    <li><a href="#">Azure</a></li>
-                    <li><a href="#">Dynamics 365</a></li>
-                    <li><a href="#">Microsoft 365</a></li>
-                    <li><a href="#">Microsoft Advertising</a></li>
-                    <li><a href="#">Microsoft 365 Copilot</a></li>
-                    <li><a href="#">Microsoft Teams</a></li>
+                    <li><h4>Business</h4></li>
+                    <li class="uh2"><a href="#" >Microsoft Cloud</a></li>
+                    <li class="uh2"><a href="#" >Microsoft Security</a></li>
+                    <li class="uh2"><a href="#" >Azure</a></li>
+                    <li class="uh2"><a href="#" >Dynamics 365</a></li>
+                    <li class="uh2"><a href="#" >Microsoft 365</a></li>
+                    <li class="uh2"><a href="#" >Microsoft Advertising</a></li>
+                    <li class="uh2"><a href="#" >Microsoft 365 Copilot</a></li>
+                    <li class="uh2"><a href="#" >Microsoft Teams</a></li>
                 </ul>
             </div>
-            <div id="column-4">
-                <h4>Developer&IT</h4>
+            <div id="column-4" class="column-menu">
                 <ul>
-                    <li><a href="#">Microsoft Developer</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Microsoft Learn</a></li>
-                    <li><a href="#">Microsoft Tech Community</a></li>
-                    <li><a href="#">Azure Marketplace</a></li>
-                    <li><a href="#">AppSource</a></li>
-                    <li><a href="#">Microsoft Power Platform</a></li>
-                    <li><a href="#">Visual Studio</a></li>
+                    <li><h4>Developer&IT</h4></li>
+                    <li class="uh2"><a href="#" >Microsoft Developer</a></li>
+                    <li class="uh2"><a href="#" >Documentation</a></li>
+                    <li class="uh2"><a href="#" >Microsoft Learn</a></li>
+                    <li class="uh2"><a href="#" >Microsoft Tech Community</a></li>
+                    <li class="uh2"><a href="#" >Azure Marketplace</a></li>
+                    <li class="uh2"><a href="#" >AppSource</a></li>
+                    <li class="uh2"><a href="#" >Microsoft Power Platform</a></li>
+                    <li class="uh2"><a href="#" >Visual Studio</a></li>
                 </ul>
             </div>
-            <div id="column-5">
-                <h4>Company</h4>
+            <div id="column-5" class="column-menu">
                 <ul>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">About Microsoft</a></li>
-                    <li><a href="#">Company news</a></li>
-                    <li><a href="#">Privacy at Microsoft</a></li>
-                    <li><a href="#">Investors</a></li>
-                    <li><a href="#">Sustainability</a></li>
+                    <li><h4>Company</h4></li>
+                    <li class="uh2"><a href="#" >Careers</a></li>
+                    <li class="uh2"><a href="#" >About Microsoft</a></li>
+                    <li class="uh2"><a href="#" >Company news</a></li>
+                    <li class="uh2"><a href="#" >Privacy at Microsoft</a></li>
+                    <li class="uh2"><a href="#" >Investors</a></li>
+                    <li class="uh2"><a href="#" >Sustainability</a></li>
                 </ul>
             </div>
         </div>
@@ -192,15 +204,15 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" class="img-link">
                             <img src="img/worldwide.png" alt="language" height="20">
-                            English(Egypt)
+                            <span class="uh2">English(Egypt)</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="img-link">
                             <img src="img/privacy checkmark.png" alt="Your Privacy Choices Opt-Out Icon" height="25">
-                            Your Privacy Choices
+                            <span class="uh2">Your Privacy Choices</span>
                         </a>
                     </li>
                     <li><a href="#">Consumer Health Privacy</a></li>
@@ -208,11 +220,11 @@
             </nav>
             <nav>
                 <ul>
-                    <li><a href="#">Contact Microsoft</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Trademarks</a></li>
-                    <li><a href="#">About our ads</a></li>
+                    <li class="uh2"><a href="#">Contact Microsoft</a></li>
+                    <li class="uh2"><a href="#">Privacy</a></li>
+                    <li class="uh2"><a href="#">Terms of use</a></li>
+                    <li class="uh2"><a href="#">Trademarks</a></li>
+                    <li class="uh2"><a href="#">About our ads</a></li>
                     <li>© Microsoft 2025</li>
                 </ul>
             </nav>

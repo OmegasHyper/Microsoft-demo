@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-eg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Egypt – Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo" aria-label="Microsoft Egypt Homepage">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="main-nav">
+          <li><a href="#">Microsoft 365</a></li>
+          <li><a href="#">Office</a></li>
+          <li><a href="#">Windows</a></li>
+          <li><a href="#">Surface</a></li>
+          <li><a href="#">Xbox</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">More ▼</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container hero-container">
+        <h1>Discover what’s next in gaming</h1>
+        <p>Game Pass Ultimate gives you access to hundreds of high-quality games.</p>
+        <a href="#" class="btn">See plans</a>
+      </div>
+    </section>
+
+    <!-- Promos Section -->
+    <section class="promos">
+      <div class="container promos-grid">
+        <article class="promo-card">
+          <img src="https://via.placeholder.com/1200x675" alt="Surface Laptop 5">
+          <h3>Surface Laptop 5</h3>
+          <p>Style and speed. Get the power you need.</p>
+          <a href="#" class="btn-text">Learn more ></a>
+        </article>
+        <article class="promo-card">
+          <img src="https://via.placeholder.com/1200x675" alt="Microsoft Teams">
+          <h3>Microsoft Teams</h3>
+          <p>Connect and collaborate anywhere.</p>
+          <a href="#" class="btn-text">Get started ></a>
+        </article>
+        <article class="promo-card">
+          <img src="https://via.placeholder.com/1200x675" alt="Windows 11">
+          <h3>Windows 11</h3>
+          <p>Bring balance to your desktop.</p>
+          <a href="#" class="btn-text">Explore Windows 11 ></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature">
+      <div class="container feature-container">
+        <div class="feature-text">
+          <h2>Empower your business</h2>
+          <p>With Microsoft 365 for Business.</p>
+          <a href="#" class="btn">Shop Business Plans</a>
+        </div>
+        <div class="feature-image">
+          <img src="https://via.placeholder.com/1200x675" alt="Business Feature">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About Microsoft</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2025 Microsoft Clone</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mainNav = document.querySelector('.main-nav');
+    hamburger.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

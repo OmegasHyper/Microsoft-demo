@@ -11,10 +11,11 @@
  <body>
     <header>
         <div>
+            <!-- <a href="#" class="mobile-vis"><img src="img/menu.png" alt="menu"></a> -->
             <a href="index.html">
                 <img src="img\RE1Mu3b.png" alt="Microsoft logo" height="23">
             </a>
-            <nav id="top-left-nav">
+            <nav id="top-left-nav" class="mobile-invis">
                 <ul>
                     <li class="list-item"><a href="#" class="uh">Microsoft 365</a></li>
                     <li class="list-item"><a href="#" class="uh">Office</a></li>
@@ -28,7 +29,7 @@
         <div>
             <nav id="top-right-nav">
                 <ul>
-                    <li class="list-item">
+                    <li class="list-item mobile-invis">
                         <a href="#"><span class="uh">All Microsoft</span><i class="down-arrow"></i></a>
                     </li>
                     <li class="list-item"><a href="#"><img src="img\search.png" alt="Search Microsoft.com" height="20"></a></li>
@@ -42,7 +43,7 @@
         <div id="slider">
             <div id="slide1-container">
                 <picture>
-                    <source media="(max-width: 1400px)" srcset="img/slide-1-scaled.avif">
+                    <source media="(max-width: 860px)" srcset="img/slide-1-scaled.avif">
                     <source media="(max-width: 2560px)" srcset="img/slide 1.avif">
                     <img src="img/slide 1.avif" alt="slide 1">
                 </picture>

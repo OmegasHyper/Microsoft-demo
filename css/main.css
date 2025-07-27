@@ -3,6 +3,18 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 860px) {
+    .mobile-invis{
+        display: none;
+    }
+}
+
+@media (min-width: 861px) {
+    .mobile-vis{
+        display: none;
+    }
+}
+
 header {
     /* width: 100%; */
     display: flex;
@@ -57,12 +69,14 @@ header div nav ul {
 .slide1-container {
     position: relative;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .slide1-container img{
     width: 100%;
-    min-width: 430px;
+    height: auto;
+    vertical-align: center;
+    /* min-width: 430px; */
     /* height: auto; */
 }
 

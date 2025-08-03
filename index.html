@@ -10,8 +10,13 @@
  </head>
  <body>
     <header>
+        <div class="top-left-mob mobile-vis">
+            <ul>
+                <li><a href="#"><img src="img/menu.png" alt="menu" height="20"></a></li>
+                <li><a href="#"><img src="img/search.png" alt="Search Microsoft.com" height="20"></a></li>
+            </ul>
+        </div>
         <div>
-            <!-- <a href="#" class="mobile-vis"><img src="img/menu.png" alt="menu"></a> -->
             <a href="index.html">
                 <img src="img\RE1Mu3b.png" alt="Microsoft logo" height="23">
             </a>
@@ -32,7 +37,7 @@
                     <li class="list-item mobile-invis">
                         <a href="#"><span class="uh">All Microsoft</span><i class="down-arrow"></i></a>
                     </li>
-                    <li class="list-item"><a href="#"><img src="img\search.png" alt="Search Microsoft.com" height="20"></a></li>
+                    <li class="list-item mobile-invis"><a href="#"><img src="img\search.png" alt="Search Microsoft.com" height="20"></a></li>
                     <li class="list-item"><a href="#"><img src="img\login.png" alt="Sign in to your account" height="25"></a></li>
                 </ul>
             </nav>
@@ -41,12 +46,12 @@
 
     <main>
         <div id="slider">
+            <picture>
+                <source media="(max-width: 1084px)" srcset="img/slide-1-scaled.avif">
+                <source media="(min-width: 1085px)" srcset="img/slide 1.avif">
+                <img src="img/slide 1.avif" alt="slide 1">
+            </picture>
             <div id="slide1-container">
-                <picture>
-                    <source media="(max-width: 860px)" srcset="img/slide-1-scaled.avif">
-                    <source media="(max-width: 2560px)" srcset="img/slide 1.avif">
-                    <img src="img/slide 1.avif" alt="slide 1">
-                </picture>
                 <div class="overlay-text">
                   <h2>Achieve the extraordinary</h2>
                   <p>Microsoft 365 delivers cloud storage, security and <br>Microsoft Copilot in your favourite apps – all in one plan.</p>
@@ -94,7 +99,11 @@
         </div>
 
         <div id="onenote">
-            <img src="img\Highlight-PC-SMB-OneNote_VP4-1260x600.avif" alt="OneNote">
+            <picture>
+                <source media="(max-width: 1084px)" srcset="img\Highlight-PC-SMB-OneNote_VP4-1260x600-scaled.avif">
+                <source media="(min-width: 1085px)" srcset="img\Highlight-PC-SMB-OneNote_VP4-1260x600.avif">
+                <img src="img\Highlight-PC-SMB-OneNote_VP4-1260x600.avif" alt="slide 1">
+            </picture>
             <div class="overlay-text-2nd">
                 <h2>Organize your life</h2>
                 <p>Keep your ideas and notes organized with <br>OneNote.</p>

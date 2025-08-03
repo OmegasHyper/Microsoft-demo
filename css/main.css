@@ -169,7 +169,7 @@ body {
         flex-wrap: wrap;
         font-size: smaller;
         color: #616161;
-        justify-content: space-between;
+        justify-content: left;
     }
 
     #bottom-nav nav:nth-child(2) li {
